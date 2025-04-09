@@ -1,0 +1,141 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    padding: 0.5%;
+    background:linear-gradient(rgb(230, 141, 156), rgb(233, 161, 173))
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    gap: 10%;
+    background:linear-gradient(rgb(233, 161, 173), rgb(225, 186, 205));
+}
+
+/* check it  */
+#navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+#wrapper {
+    height: 80%;
+    width: 100%;
+    display: flex;
+}
+
+#sidebar {
+    /* background: pink; */
+    background:linear-gradient(rgb(230, 158, 170), rgb(234, 197, 197));
+
+    height: 100%;
+    width: 20%;
+    padding: 30px 20px 2px 20px;
+
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: #111;
+    display: flex;
+    margin-top: 10%;
+    border-bottom: 0.2px solid rgb(225, 220, 220);
+    
+
+}
+#sidebar a:hover{
+    text-decoration: underline;
+}
+
+#part2 {
+    background: linear-gradient(rgb(239, 191, 222), rgb(231, 180, 219));
+    position: relative;
+    height: 100%;
+    width: 80%;
+    padding: 20px 20px 2px 20px;
+
+}
+
+#imge {
+    /* background-color: #111; */
+    height: 48%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 15%;
+}
+
+.pic {
+    width: 40%;
+    margin-top: 10px;
+    height: 99%;
+    background-color: #11e048;
+    border: 1px solid rgb(196, 189, 189);
+}
+
+.pic:hover {
+    border-radius: 15px;
+    border: 1.8px solid black;
+}
+
+#pic1 {
+    background-image: url(https://images.unsplash.com/photo-1597633125184-9fd7e54f0ff7?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+  
+}
+
+#pic2 {
+    background-image: url(https://images.unsplash.com/photo-1588122698107-836d3c39704c?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#pic3 {
+    background-image: url(https://i.pinimg.com/originals/23/38/9a/23389afbf66c309db1511b2dacb1911c.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#part2 p {
+    margin-top: 17px;
+}
+
+#part2 h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#part2 li {
+    margin-left: 20px;
+    margin-bottom: 3px;
+
+}
+
+#footer {
+    background-color: rgb(77, 71, 71);
+    display: flex;
+    justify-content: center;
+    padding: 0.95%;
+}

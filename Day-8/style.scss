@@ -1,0 +1,113 @@
+
+@mixin light-weight-font{
+    font-size: 1.2rem ;
+    opacity: 0.6;
+    margin-bottom: 0.9rem;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+  
+}
+html{
+ font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    padding: 0.9rem;
+}
+main{
+    padding: 1rem;
+    padding-top: 3rem;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.view-1{
+ 
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 1.4rem;
+   p{
+    @include light-weight-font();
+   }
+   h1{
+    font-size: 4.3rem;
+    font-weight: 500;
+    line-height: 1;
+   }
+
+   img{
+     width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+   }
+}
+
+.view-2{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+   .top{
+    p{
+        @include light-weight-font();
+    }
+    h1{
+        font-size: 3.2rem;
+        font-weight: 500;
+        margin-bottom: 0.8rem;
+        line-height: 1;
+    }
+    button{
+        padding: 0.4rem 2.1rem;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+        background-color: #000;
+        color: whitesmoke;
+    }
+   }
+
+   .line{
+    height: 0.2rem;
+    width: 90%;
+    margin: 2rem ;
+    background-color: #000;
+   }
+
+   .bottom{
+
+    h1{
+        font-weight: 200;
+        margin-bottom: 1rem;
+    }
+   }
+}
+
+@media (min-width:1020px){
+    body{
+        padding: 2rem;
+    }
+    main{
+        padding: 3rem;
+    }
+    .view-1{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        p{
+            font-size: 0.9rem;
+            opacity: 7;
+        }
+        h1{
+            font-size: 6rem;
+            font-weight: 500;
+        }
+    }
+}

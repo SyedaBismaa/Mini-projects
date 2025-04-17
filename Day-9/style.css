@@ -56,9 +56,6 @@ main {
      object-fit: cover;
   border-radius: 1rem;
 }
-.view-1 .bottom .images img:hover {
-  transform: scale(1.5rem);
-}
 .view-1 .bottom .images .img-a {
   grid-area: a;
 }

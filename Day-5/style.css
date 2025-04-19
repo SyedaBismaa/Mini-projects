@@ -1,80 +1,90 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
+
 html,
-body{
+body {
     height: 100%;
     width: 100%;
 }
 
-#wrapper{
+#wrapper {
     width: 100%;
     background-color: wheat;
     display: grid;
     gap: 20px;
-    grid-template-areas: 
-    "a"
-    "b"
-    "c"
-    "d"
-    "e"
-    "f"
-    "g"
-    "h"
-    "i"
-    "j"
+    grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        "g"
+        "h"
+        "i"
+        "j"
     ;
-  
 }
 
-@media (min-width:1080px){
-    #wrapper{
-        grid-template-areas: 
-    
-        "a a b c"
-        "a a d e"
-        "f g j j"
-        "h i j j";
-         ;
+@media (min-width:1080px) {
+    #wrapper {
+        grid-template-areas:
+
+            "a a b c"
+            "a a d e"
+            "f g j j"
+            "h i j j";
+        ;
 
     }
 }
 
-img{
+img {
     width: 100%;
-    aspect-ratio: 16/9; 
+    aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: 10px;
 }
-.image-a{
+
+.image-a {
     grid-area: a;
 }
-.image-b{
-grid-area: b ;
+
+.image-b {
+    grid-area: b;
 }
-.image-c{
-   grid-area: c; 
+
+.image-c {
+    grid-area: c;
 }
-.image-d{
+
+.image-d {
     grid-area: d;
 }
-.image-e{
-  grid-area: e ;  
+
+.image-e {
+    grid-area: e;
 }
-.image-f{
-   grid-area: f ; 
+
+.image-f {
+    grid-area: f;
 }
-.image-g{
- grid-area:g ;   
+
+.image-g {
+    grid-area: g;
 }
-.image-h{
-   grid-area: h ; 
+
+.image-h {
+    grid-area: h;
 }
-.image-i{
-   grid-area: i; 
+
+.image-i {
+    grid-area: i;
 }
-.image-j{
+
+.image-j {
     grid-area: j;
 }
